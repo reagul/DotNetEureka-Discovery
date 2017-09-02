@@ -1,10 +1,10 @@
 # DotNetEureka-Discovery Sample - Precompiled
 
-# Setup Circuit Breaker Dashboard service on CloudFoundry
+# Setup Eureka service on CloudFoundry
 You must first create an instance of the Circuit Breaker service in a org/space.
 
 1. cf target -o myorg -s development
-2. cf create-service p-circuit-breaker-dashboard standard myHystrixService
+2. cf create-service p-service-registry standard myDiscoveryService
 3. Wait for the service to become ready! (i.e. Type `cf services` and make sure the services are showing up as created ) 
 
 # Publish App & Push to CloudFoundry
